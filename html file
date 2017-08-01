@@ -1,0 +1,91 @@
+<!doctype html>
+   <html>
+<head>
+     <title> Home | Melissa kavege</title>
+     </head>
+ <style type= "text/css">
+ #myContainer{
+   width:
+   height:
+   position:relative;
+   background: blue;
+ }
+#myAnimation{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: black;
+}
+}
+
+
+ h1{
+   text-shadow: center;
+   color: black;
+   font-family:fantasy;
+   font-size: 100px;
+ }
+ h3, h2{
+   text-indent: inherit;
+   color:rgb(153, 0, 0);
+   font-family: sans-serif;
+   font-size: 45px;
+ }
+ p{
+   text-align: center;
+   font-size:20px;
+   color: inherit;
+   font-family: sans-serif;
+ }
+ body{
+   background-color:
+ }
+  img{position: center;
+    top:35x auto;
+    left:170x inherit;
+    }
+     </style>
+     <body>
+
+        <h1> About Me </h1>
+<p> <img src="melissa.jpg" alt="this is me" style="width:400px;height:500px;">
+ Over my life i've done somethings and I have experince many things.
+  As a child I was always in love with getting my hands dirty and get into many
+  different teams and clubs i've played many sports and traviled to someplace and
+  experinced different cultures and traditions.Ever since I was a child I have
+  always liked tech my mother has always exposed me to tech as child and have
+  always had great friends whom incourage me to follow my dreams and do what I
+  love, which makes me who I am today. In school I was in the part in the debate
+   team and now I am the President of the chess club In the summer of 2017 I took and amazing
+  choice to be a part of girls who code which has opened me up to many different
+  fields of tech and I have done many activities in girls who code.
+</p>
+
+
+  <img src="http://sites.utexas.edu/trccsblog/files/2016/02/Girls-Who-Code-Summer-Program_821x234.png" alt="girls who code" style="width:500px;height:300";>
+
+
+
+
+
+  <h3>The core four</h3>
+
+  <p>The core for of python is Functions, variables, conditionals and loops.
+    Funtions are......Loops are.......and......contionals are.....variables are...
+
+    <a href=" https://github.com/melissakavege/portfolio/blob/master/cocos_Day.py">
+      take a look
+    </a>
+    </p>
+
+<h3>Robotics unit</h3>
+<video width="720" height="500" controls="">
+<source src="IMG_0004.MP4" type="video/mp4">
+
+</video>
+<h3> obamicon</h3>
+<img src="melissak.png" alt="This is me but I made it look like an obamicon" style="width:400px;height:550px;">
+
+      </body>
+
+</html>
