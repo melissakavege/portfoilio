@@ -1,1 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+       table {
+border-none: collapse;
+border: none;
+}
+    </style>
+  </head>
+  <body>
+    <h3>Homeless shelters in the DMV</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat:39.045753 , lng: -76.641273 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: uluru
+        });
+        //D.C.//
+        //Coalition for the Homeless: Valley Place//
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Coalition for the Homeless: Valley Place</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b></b>Coalition for the Homeless: Valley Place</p>'+
+            '<p><a href="http://www.dccfh.org">'+
+            'www.dccfh.org</a> '+
+            '<p>Adress:1355 Valley Pl SE, Washington, DC 20020 </p> '+
+            'phone: (202) 610-5560</p>'+
+            '<p>No hours Listed</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        var marker = new google.maps.Marker({
+          position: {lat:38.8625, lng:-76.9871},
+          map: map,
+          title:'Coalition for the Homeless: Valley Place'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+        //Sasha Bruce Youthwork Independent Living Program//
+        var coString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Sasha Bruce Youthwork Independent Living Program</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b></b>Sasha Bruce Youthwork Independent Living Program</p>'+
+            '<p><a href="http://www.sashabruce.org">'+
+            'www.sashabruce.org</a> '+
+            '<p>Adress:1312 East Capitol St NE, Washington, DC 20003 </p> '+
+            'phone: (202) 675-9375</p>'+
+            '<p>24 hours</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow2 = new google.maps.InfoWindow({
+          content: coString
+        });
+        var marker2 = new google.maps.Marker({
+          position: {lat:38.8902, lng:-76.9877},
+          map: map,
+          title:'Sasha Bruce Youthwork Independent Living Program'
+        });
+        marker2.addListener('click', function() {
+          infowindow2.open(map, marker2);
+        });
+        //Christ House: Kairos House//
+        var costString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Christ House: Kairos House</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b></b>Christ House: Kairos House</p>'+
+            '<p><a href="http://christhouse.org/services-2/kairos-program/">'+
+            'christhouse.org</a> '+
+            '<p>Adress:2544 17th St NW, Washington, DC 20009 </p> '+
+            'phone: (202) 328-6155</p>'+
+            '<p>No hours Listed</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow3 = new google.maps.InfoWindow({
+          content: costString
+        });
+        var marker3 = new google.maps.Marker({
+          position: {lat:38.9243, lng:-77.0394},
+          map: map,
+          title:'Christ House: Kairos House'
+        });
+        marker3.addListener('click', function() {
+          infowindow3.open(map, marker3);
+        });
+        //Hermano Pedro Day Shelter
+        var copString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Hermano Pedro Day Shelter</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b></b>Hermano Pedro Day Shelter</p>'+
+            '<p><a href="http://www.shelterlistings.org/details/20441/">'+
+            'www.shelterlistings.org</a> '+
+            '<p>Adress:3211 Sacred Heart Way, Washington, DC 20010</p> '+
+            'phone: (202) 246-6643</p>'+
+            '<p>No hours Listed</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow4 = new google.maps.InfoWindow({
+          content: copString
+        });
+        var marker4 = new google.maps.Marker({
+          position: {lat:38.9311, lng:-77.0359},
+          map: map,
+          title:'Hermano Pedro Day Shelter'
+        });
+        marker4.addListener('click', function() {
+          infowindow4.open(map, marker4);
+        });
+        //Blair House Shelter//
+        var cossString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Blair House Shelter</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b></b>Blair House Shelter</p>'+
+            '<p><a href="http://www.dccfh.org/programs/housing/blair-transitional-rehabilitation-program">'+
+            'www.dccfh.org</a> '+
+            '<p>Adress:I St NE, Washington, DC 20002</p> '+
+            'phone: (202) 727-2832/33 </p>'+
+            '<p>Mon–Fri | 24 hours</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow5 = new google.maps.InfoWindow({
+          content: cossString
+        });
+        var marker5 = new google.maps.Marker({
+          position: {lat:38.9012, lng:-76.9970},
+          map: map,
+          title:'Blair House Shelter'
+        });
+        marker5.addListener('click', function() {
+          infowindow5.open(map, marker5);
+        });
+        //Community of Hope: Hope Apartments
+        var plopString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Community of Hope: Hope Apartments</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b></b>Community of Hope: Hope Apartments</p>'+
+            '<p><a href="https://www.communityofhopedc.org/">'+
+            'www.communityofhopedc.org</a> '+
+            '<p>Adress:3715 2nd St SE, Washington, DC 20032</p> '+
+            'phone:(202) 563-1060</p>'+
+            '<p>No hours Listed</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow6 = new google.maps.InfoWindow({
+          content: plopString
+        });
+        var marker6 = new google.maps.Marker({
+          position: {lat:38.8373, lng:-77.0031},
+          map: map,
+          title:'Community of Hope: Hope Apartments'
+        });
+        marker6.addListener('click', function() {
+          infowindow6.open(map, marker6);
+        });
+//Isaiah House
+        var okString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Isaiah House</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b></b>Isaiah House</p>'+
+            '<p><a href="http://some.org/wp-content/uploads/2014/08/Isaiah-House-Program-Description.pdf">'+
+            'some.org</a> '+
+            '<p>Adress:75 Hanover Pl NW, Washington, DC 2000</p> '+
+            'phone:(202) 797-8806</p>'+
+            '<p>No hours Listed</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow7 = new google.maps.InfoWindow({
+          content: okString
+        });
+        var marker7 = new google.maps.Marker({
+          position: {lat:38.8954, lng:-77.0133},
+          map: map,
+          title:'Isaiah House'
+        });
+        marker7.addListener('click', function() {
+          infowindow7.open(map, marker7);
+        });
+
+        var okayString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Open Door Shelter for Women</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b></b>Open Door Shelter for Women</p>'+
+            '<p><a href="http://www.downtowndc.org/go/open-door-shelter-women">'+
+            'www.downtowndc.org</a> '+
+            '<p>Adress:425 2nd St NW, Washington, DC 20001</p> '+
+            'phone:(202) 639-8093</p>'+
+            '<p>No hours Listed</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: okayString
+        });
+        var marker8 = new google.maps.Marker({
+          position: {lat:38.8954, lng:-77.0133},
+          map: map,
+          title:'Open Door Shelter for Women'
+        });jh 
+        marker8.addListener('click', function() {
+          infowindow8.open(map, marker8);
+        });
+
+
+
+
+      }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWINCdZReVV0kx1GOyxN3aaI-fVrQCy_o&callback=initMap">
+          </script>
+        </body>
+      </html>
 
